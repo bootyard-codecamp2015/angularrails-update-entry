@@ -1,12 +1,26 @@
-<h1>Topic List</h2>
-
-<table ng-controller="topicPageController">
-	<tr collspan="10">
-		<th>Title</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>{{ topic.title }}</td>
-		<td>{{ topic.description }}</td>
-	</tr>
-</table>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example68-production</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+	<body>
+	 <div class="container">
+			<h2>Update Topic</h2>
+			<form ng-controller="topicPageController as form" ng-submit="updateTopic()" novalidate>
+   		  <div class="form-group">
+   		    <label for="inputName">Title</label>
+   		    <input type="text" class="form-control" id="inputName" placeholder="Title" ng-model="topic.title">
+   		  </div>
+   		  <div class="form-group">
+   		    <label for="inputDescr">Description</label>
+   		    <input type="text" class="form-control" id="inputDescr" placeholder="Description" ng-model="topic.description">
+   		  </div>
+      	     <input type="submit" class="btn btn-default" value="Update Topic" />
+      	</form>
+	</div>		
+  </body>
+</html> 

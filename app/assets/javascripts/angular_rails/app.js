@@ -8,8 +8,8 @@
     // Resources
     'public.resource.topic',
     // Controller
-    'public.ctrl.topicListCtrl',
-    'public.ctrl.topicPageCtrl'
+    'public.ctrl.topicPageCtrl',
+    'public.ctrl.topicListCtrl'
   ])
   .config(['$routeProvider', 
     function($routeProvider) {
