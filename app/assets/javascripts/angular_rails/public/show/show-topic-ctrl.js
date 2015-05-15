@@ -14,7 +14,6 @@
           .$promise.then(function(data) {
             if(data.success == true) {
               alert('Success');
-              //$rootScope.$broadcast('updatedProfile', true);
             } else {
               alert("Error in updating profile!");
             }
